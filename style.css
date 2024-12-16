@@ -1,0 +1,330 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+background-color: rgb(17 24 39);
+color: rgb(156 163 175);
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    ;
+    background-color: rgb(40 42 104);
+}
+.object-cover {
+    object-fit: cover;
+    border-radius: 155px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0;
+}
+
+.firstSection div {
+    width: 30%;
+}
+
+.firstSection img {
+    width: 100%;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+
+    color: rgb(97, 110, 221);
+}
+
+
+
+body hr {
+    border: 0;
+    background-color: #9c97f1;
+    height: 1px;
+    margin: 40px 80px;
+}
+
+.leftdiv {
+    margin: 65px 0px;
+    font-size: large;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 90vh;
+}
+
+
+
+.secondSection .box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 85px 0px;
+    display: flex;
+}
+
+.secondSection .vertical {
+    background-color: white;
+    width: 1px;
+    height: 80px;
+    margin: 0px 272px;
+}
+
+.image-top {
+    height: 70px;
+    width: 63px;
+    position: relative;
+    top: -64px;
+    left: -27px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 2px;
+    width: 300px;
+    left: -149px;
+    text-align: center;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 10px;
+    color: #fbfafa;
+    width: 200px;
+    font-size: 11px;
+    text-align: left;
+    left: -85px;
+}
+
+footer {
+    background-color: #383856;
+    height: 233px;
+    ;
+}
+
+.footer {
+
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+
+}
+
+.footer-first {
+    margin: 23px 122px;
+}
+.leftdiv p{
+    /* font-size: 14px; */
+    margin: 20px 0px;
+}
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    margin: 25px 0px;
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: white;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+    color:black;
+  }
+ 
+
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+    align-items: center;
+    color:#4d4d52;
+  }
+  /* .carousel .card span {
+    color: #6A6D78;
+    font-size: 1rem;
+  } */
+  .carousel .card li {
+    color: #6A6D78;
+    font-size: 1rem;
+    width: 200px;
+    list-style: circle;
+  }
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+}
+.servicesection {
+    /* margin: 25px 0px; */
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .card {
+    min-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .card ul li {
+    margin: 10px 0;
+    color: #555;
+  }
+
+  /* Navigation Buttons */
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  .nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  header {
+    position: sticky; /* Makes the header stick */
+    top: 0; /* Sticks to the top of the viewport */
+    
+    
+    z-index: 1000; /* Ensures navbar appears on top */
+}
+.marginhead{
+    margin: 0px 7rem;
+}
